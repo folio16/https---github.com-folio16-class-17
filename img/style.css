@@ -1,0 +1,806 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header-section {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.header-row {
+  padding: 35px 0px 0px 0px;
+}
+.header-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container {
+  max-width: 149px;
+}
+.logo-styles {
+  width: 100%;
+}
+ul {
+  display: flex;
+  gap: 30px;
+}
+ul li {
+  display: inline;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+}
+.button {
+  background: #94c83d;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 5px;
+  font-family: "Plus Jakarta Sans";
+  cursor: pointer;
+}
+
+/* Start Hero Section  */
+
+.hero-section {
+  background-image: url(./assets/img/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 144px 0 415px 0;
+}
+.hero-col-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-col-2 {
+  margin-top: 10px;
+}
+.hero-col-3 {
+  margin-top: 12px;
+}
+.hero-col-4 {
+  margin-top: 20px;
+}
+.status-container {
+  background: rgba(255, 255, 255, 0.06);
+  /* width: 147px; */
+  height: 36px;
+  padding: 8px 14px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.status-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+.status-circle {
+  width: 20px;
+  height: 20px;
+  background: #94c83d;
+  border-radius: 50px;
+}
+.hero-para {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+.hero-subtitle {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #fff;
+}
+.hero-bold-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 81px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #fff;
+}
+.hero-light-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* End Hero Section  */
+/* Start About section */
+.about-section {
+  background-image: url(./assets/img/about-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.about-img {
+  max-width: 1170px;
+}
+.about-img-style {
+  width: 100%;
+  margin-top: -360px;
+}
+.left-img-container {
+  max-width: 570px;
+}
+.left-img-style {
+  width: 100%;
+}
+
+.about-col-2 {
+  display: flex;
+  gap: 50px;
+  padding: 70px 0 100px 0;
+}
+.col-2-left {
+  width: 50%;
+}
+.col-2-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.new-status-conatainer {
+  background: #e7e7e7;
+  width: max-content;
+  padding: 8px 14px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.status-circle-text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+.left-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: -0.03em;
+  color: #000;
+}
+.left-title-span {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -0.03em;
+  color: #94c83d;
+}
+.left-desc {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: #58585a;
+}
+
+/* End About Section  */
+/* Start Job Listing Section */
+
+.job-listing-section {
+  background-image: url(./assets/img/job-listing-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 46px 0px;
+}
+.job-list-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+}
+.job-detail-row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-category-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+.job-detail {
+  background: #fff;
+  padding: 22px 30px;
+  border-radius: 10px;
+}
+.job-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.button-white {
+  background: #e7e7e7;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 5px;
+  font-family: "Plus Jakarta Sans";
+  cursor: pointer;
+}
+.job-listing-col-1 {
+  display: flex;
+  justify-content: center;
+}
+.job-listing-col-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.job-listing-col-2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.job-detail-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 0 0;
+}
+.dollar {
+  width: 100%;
+}
+.dollar-container {
+  max-width: 11px;
+  display: flex;
+  align-items: center;
+}
+.dollar-sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.prices {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #58585a;
+}
+.temp-container {
+  max-width: 15px;
+  display: flex;
+  align-items: center;
+}
+.post-date {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: #58585a;
+}
+.temp-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.currency-detail {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.location-sections {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.location-container {
+  max-width: 14px;
+  display: flex;
+  align-items: center;
+}
+.loc {
+  width: 100%;
+}
+.job-detail-row-3 {
+  display: flex;
+  padding: 15px 0 0 0;
+}
+.job-listing-col-4 {
+  padding: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.job-listing-col-5 {
+  padding: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.job-listing-col-6 {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 0 0;
+}
+/* End Job Listing Section */
+
+/* Start Carousel */
+.carousel-row {
+  display: flex;
+  flex-direction: column;
+}
+.carousel-section {
+  background-image: url(./assets/img/carousel-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 85px 0px;
+}
+.carousel-subtitle {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+.carousel-title-main {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  color: #000;
+  padding: 20px 0 0 0;
+}
+.carousel-col-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-col-2 {
+  display: flex;
+  justify-content: center;
+}
+.carousel-col-3 {
+  padding: 30px 0 0 0;
+}
+.home-demo .item {
+  background-color: #000;
+  padding: 39px 24px;
+  border-radius: 10px;
+}
+/* .item:hover{
+    background-color: #94c83d;
+  
+  } */
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.home-demo h2 {
+  color: #fff;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+.slide-box {
+  background-color: #000;
+  padding: 39px 24px;
+  border-radius: 10px;
+}
+
+.icon-circle {
+  max-width: 90px;
+  max-height: 90px;
+  background-color: #94c83d;
+  border-radius: 50px;
+}
+
+.plus-icon {
+  width: 100%;
+  padding: 20px;
+}
+.carousel-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+.carousel-subtitl {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+.carousel-para {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+.read-more {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #94c83d;
+  text-decoration: underline;
+}
+.hrr {
+  width: 100%;
+}
+/* End Carousel */
+
+/* Start Footer */
+.footer-section {
+  background-image: url(./assets/img/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 70px 0 50px 0;
+}
+.footer-logo {
+  max-width: 189px;
+}
+.footerlogo {
+  width: 100%;
+}
+.footer-para {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.contact-icons span img {
+  height: 20px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.contact-icons ul {
+  display: flex;
+}
+
+.contact-icons ul li {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  color: #fff;
+}
+.footer-credit {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.brand {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #94c83d;
+}
+.social-logo {
+  max-width: 35px;
+}
+.social-logo-single {
+  width: 100%;
+}
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-col-1 {
+  display: flex;
+  justify-content: center;
+}
+.footer-col-2 {
+  display: flex;
+  justify-content: center;
+}
+.footer-col-3 {
+  display: flex;
+  justify-content: center;
+}
+.footer-col-4 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+/* End Footer */
+
+/* Media Query */
+@media only screen and (min-width: 1024px) and (max-width: 1250px) {
+  .container {
+    max-width: 944px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    padding: 0 20px;
+  }
+  ul li a {
+    font-size: 13px;
+}
+
+.logo-container {
+    max-width: 110px;
+}
+
+.button {
+    font-size: 13px;
+    padding: 12px 30px;
+}
+
+.status-title {
+    font-size: 12px;
+}
+
+.status-circle {
+    width: 15px;
+    height: 15px;
+}
+
+.hero-para {
+    font-size: 11px;
+}
+
+.hero-subtitle {
+    font-size: 34px;
+}
+
+.hero-bold-title {
+    font-size: 48px;
+}
+
+.hero-light-title {
+    font-size: 18px;
+}
+
+.about-col-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-2-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-2-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-title {
+    text-align: center;
+    font-size: 35px;
+}
+
+.left-desc {
+    text-align: center;
+}
+
+.status-circle-text {
+    font-size: 11px;
+}
+
+.job-list-title {
+    font-size: 35px;
+}
+
+.left-title-span {
+    font-size: 35px;
+}
+
+.job-category-title {
+    font-size: 30px;
+}
+
+.button-white {
+    padding: 12px 30px;
+}
+
+.carousel-title-main {
+    font-size: 35px;
+}
+
+.icon-circle {
+    /* width: 65px; */
+    max-width: 65px;
+}
+
+.carousel-title {
+    font-size: 18px;
+}
+
+.carousel-subtitle {
+    font-size: 12px;
+}
+
+.carousel-para {font-size: 14px;}
+
+.read-more {
+    font-size: 12px;
+}
+
+.footer-logo {
+    max-width: 140px;
+}
+
+.footer-para {
+    font-size: 12px;
+}
+.contact-icons ul li span {
+  width: 19px;
+}
+.contact-icons ul li{
+font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  .navbars{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 730px) {
+.contact-icons ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.about-img {
+  margin-top: -70px;
+}
+
+.footer-row {
+    gap: 12px;
+}
+
+.social-logo {
+    max-width: 25px;
+}
+.prices {
+  font-size: 13px;
+}
+
+.post-date {
+  font-size: 13px;
+}
+}
+@media only screen and (max-width: 519px) {
+
+  .about-img {
+    margin-top: -151px;
+}
+.job-detail-row-1 {
+  flex-wrap: wrap;
+  gap: 12px;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.job-detail-row-2 {
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.job-detail-row-3 {
+  justify-content: center;
+}
+
+.left-title-span {
+  font-size: 24px;
+}
+
+.job-list-title {
+  font-size: 24px;
+}
+
+.job-category-title {
+  font-size: 22px;
+}
+
+.left-title {
+  font-size: 24px;
+}
+
+.hero-bold-title {
+  font-size: 30px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+}
+.about-col-2 {
+  padding: 40px 0 40px 0;
+}
+}
+@media only screen and (max-width: 410px) {
+
+  .about-img {
+    margin-top: -165px;
+}
+}
+@media only screen and (max-width: 370px) {
+
+  .about-img {
+    margin-top: -225px;
+}
+}
